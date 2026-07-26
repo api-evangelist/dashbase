@@ -1,22 +1,59 @@
 aid: dashbase
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dashbase.png
 name: Dashbase
-description: Dashbase is a company surfaced as a portfolio company of uncork-capital and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Dashbase, Inc. was a San Jose, California based developer of a next-generation
+  log analytics and search platform, positioned as a lighter, real-time
+  alternative to heavier log-management and observability stacks for DevOps and
+  engineering teams. The company was a portfolio company of Uncork Capital. As of
+  this enrichment pass its primary domain (dashbase.io) no longer resolves /
+  times out and its GitHub organization retains only a single archived fork, so
+  the company appears to be defunct or to have been acquired and wound down; no
+  live developer surface, API, SDK, OpenAPI, or documentation could be located.
+  This profile is retained as a network record with only verifiable facts.
 url: https://raw.githubusercontent.com/api-evangelist/dashbase/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: defunct
 x-backed-by:
 - uncork-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Analytics
+- Log Management
+- Search
+- Observability
+- Monitoring
+- DevOps
 apis: []
+common:
+- type: GitHubOrganization
+  url: https://github.com/dashbase
+- type: Website
+  url: https://dashbase.io
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
